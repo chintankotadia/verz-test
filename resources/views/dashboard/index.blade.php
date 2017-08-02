@@ -8,31 +8,20 @@
                 <div class="panel-heading">Manage users</div>
                 <div class="panel-body">
                     @include('partials.messages')
-                    <br /><br />
                     <div class="advance-table">
-                        <table class="table table-hover table-bordered table-responsive">
+                        <table id="users-table" class="table table-bordered">
                             <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                </tr>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Avatar</th>
+                                <th>Created at</th>
+                                <th>Updated at</th>
+                            </tr>
                             </thead>
-                            <tbody>
-                                @if(count($users) > 0)
-                                    @foreach($users as $user)
-                                    <tr>
-                                        <td>{{ $user->name }}</td>
-                                        <td>{{ $user->email }}</td>
-                                    </tr>
-                                    @endforeach
-                                @else
-                                    <tr>
-                                        <td colspan="3" class="text-center"> No user present.</td>
-                                    </tr>
-                                @endif  
-                            </tbody>
                         </table>
-                        {!! $users->render() !!}
                     </div>
                 </div>
             </div>
@@ -40,3 +29,24 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+    (function($){
+        $('#users-table').DataTable({
+            serverSide: true,
+            processing: true,
+            ajax: '{{ route('dashboard.users') }}',
+            columns: [
+                {data: 'id'},
+                {data: 'name'},
+                {data: 'email'},
+                {data: 'mobile'},
+                {data: 'photo', orderable: false, searchable: false},
+                {data: 'created_at'},
+                {data: 'updated_at'}
+            ]
+        });
+    })(jQuery);
+</script>
+@endsection('scripts')

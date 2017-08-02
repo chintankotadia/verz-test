@@ -64,15 +64,26 @@
                             <label for="mobile" class="col-md-4 control-label">Mobile</label>
 
                             <div class="col-md-6">
-                                <input id="mobile" type="text" class="form-control" name="mobile" required>
+                                <input id="mobile" type="text" class="form-control" value="{{ old('mobile') }}"  name="mobile" required>
+
+                                @if ($errors->has('mobile'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('mobile') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 
-                        <div class="form-group">=
+                        <div class="form-group{{ $errors->has('photo') ? ' has-error' : '' }}">
                             <label for="photo" class="col-md-4 control-label">Photo</label>
 
                             <div class="col-md-6">
                                 <input id="photo" name="photo" type="file" />
+                                @if ($errors->has('photo'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('photo') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 

@@ -76,5 +76,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://cdn.datatables.net/v/bs/dt-1.10.15/datatables.min.js"></script>
+
+    @yield('scripts')
 </body>
 </html>

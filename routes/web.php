@@ -17,5 +17,5 @@ Auth::routes();
 
 Route::group(['middleware' => ['web','auth']], function() {
     Route::get('/dashboard', 'DashboardController@index');
-    
+    Route::get('/dashboard/users', 'DashboardController@users')->name('dashboard.users');
 });
