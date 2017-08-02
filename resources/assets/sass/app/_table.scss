@@ -1,0 +1,96 @@
+/*
+ * Filename : tables.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the table styles
+ */
+
+.table {
+	width: 100% !important;
+	thead > tr > th,
+	tbody > tr > th,
+	tfoot > tr > th,
+	thead > tr > td,
+	tbody > tr > td,
+	tfoot > tr > td {
+		padding: 10px;
+	}
+	thead > tr > th {
+		padding: 10px 5px;
+	}
+	tbody > tr > td {
+		padding: 5px 3px;
+		font-size: 12px;
+	}
+}
+.advance-table {
+	.table {
+		tr td {
+			vertical-align: middle;
+			.img-thumbnail {
+				max-width: 120px;
+			}
+		}
+		tr:last-child {
+			border-bottom: 1px solid #ddd;
+		}
+		.btn-toggler {
+			background: transparent;
+			color: $text-color;
+			font-size: 10px;
+			line-height: 18px;
+			height: 22px;
+			width: 22px;
+			border-radius: 0px;
+			&.btn-close {
+				color: $danger-color;
+			}
+		}
+	}
+	.dataTables_length,
+	.dataTables_filter,
+	.dataTables_info {
+		padding: 15px 0;
+	}
+	.dataTables_filter {
+		float: right;
+		label {
+			font-weight: 300;
+			width: 100%;
+			input {
+				width: 77%;
+				margin-left: 5px;
+			}
+		}
+	}
+	.dataTables_length {
+		select {
+			width: 65px;
+			padding: 5px 8px;
+			background: $white;
+			box-shadow: none;
+		}
+		label {
+			font-weight: 300;
+		}
+	}
+	.menu-table {
+		tbody {
+			border: 0;
+		}
+		.child-lists {
+			background: rgba(170, 170, 170, 0.5);
+			tr:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+}
+.table-details {
+	tr td {
+		.img-thumbnail {
+			max-width: 120px;
+		}
+	}
+}

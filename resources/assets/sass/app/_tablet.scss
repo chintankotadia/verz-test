@@ -1,0 +1,58 @@
+/*
+ * Filename : tablet.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the styles of tablet layout
+ */
+
+@media (max-width: 767px) {
+	.header {
+		position: relative;
+		margin-top: 70px;
+		.brand {
+			position: fixed;
+			float: none;
+			width: 100%;
+			top: 0px;
+			z-index: 1005;
+			height: 70px;
+			.sidebar-toggle-box {
+				right: 15px;
+			}
+		}
+		.top-nav {
+			margin: 0 0 13px;
+			ul.top-menu {
+				li > a {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+	.sidebar {
+		position: fixed;
+		z-index: 1002;
+		top: 80px;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		margin-left: -240px;
+		&.hide-bar {
+			margin-left: 0px;
+		}
+		.navigation {
+			ul.sidebar-menu {
+				padding-top: 0px;
+				margin-top: 0px;
+			}
+		}
+	}
+	.main-content {
+		margin-left: 0px;
+		.wrapper {
+			margin-top: 0px;
+		}
+	}
+}

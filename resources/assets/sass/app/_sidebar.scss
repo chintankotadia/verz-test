@@ -1,0 +1,66 @@
+/*
+ * Filename : sidebar.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the styles of sidebar section
+ */
+
+.sidebar {
+	width: 240px;
+	height: 100%;
+	position: fixed;
+	background: #32323a;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	&.hide-bar {
+		margin-left: -240px;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
+	.navigation {
+		height: 100%;
+		ul.sidebar-menu {
+			margin: -2px 0 0;
+			padding: 80px 0 0;
+			li {
+				position: relative;
+				border-bottom: 1px solid rgba(255,255,255,0.05);
+				a {
+					color: #aeb2b7;
+					text-decoration: none;
+					display: block;
+					padding: 18px 0 18px 25px;
+					font-size: 12px;
+					outline: none;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					-ms-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+					i {
+						font-size: 15px;
+						padding-right: 6px;
+					}
+					span {
+						display: inline-block;
+					}
+					&:hover, &.active {
+						background: #28282e;
+						color: $primary-color;
+						display: block;
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						-o-transition: all 0.3s ease;
+						-ms-transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+		}
+	}
+}

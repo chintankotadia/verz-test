@@ -1,0 +1,44 @@
+/*
+ * Filename : settings.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the settings variables
+ */
+
+//Font path
+$font-path: '../fonts/';
+$icon-font-path: $font-path;
+$fa-font-path: $font-path + '/font-awesome/';
+
+//Image path
+$images-path: '../images/';
+
+//Colors
+$white: #fff;
+$black: #000;
+
+//Different body variables
+$text-color: #444;
+$background-color: #f1f2f7;
+$body-font-family: 'Open Sans' Arial, Sans-serif;
+$body-font-size: 13px;
+
+//Different colors
+$default-color: #c7cbd6;
+$default-color-hover: #b0b5b9;
+
+$primary-color: #008cba;
+$primary-color-hover: #007EA8;
+
+$success-color: #95b75d;
+$success-color-hover: #88a755;
+
+$warning-color: #f3c022;
+$warning-color-hover: #e4ba00;
+
+$info-color: #57c8f1;
+$info-color-hover: #53bee6;
+
+$danger-color: #a94442;
+$danger-color-hover: #a94442;

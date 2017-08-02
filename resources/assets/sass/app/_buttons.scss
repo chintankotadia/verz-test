@@ -1,0 +1,73 @@
+/*
+ * Filename : buttons.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the button styles
+ */
+
+.btn {
+	&:active, &.active {
+		box-shadow: none;
+	}
+	&.btn-default {
+		background-color: $default-color;
+		border-color: $default-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $default-color-hover;
+			border-color: $default-color-hover;
+		}
+	}
+	&.btn-primary {
+		background-color: $primary-color;
+		border-color: $primary-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $primary-color-hover;
+			border-color: $primary-color-hover;
+		}
+	}
+	&.btn-success {
+		background-color: $success-color;
+		border-color: $success-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $success-color-hover;
+			border-color: $success-color-hover;
+		}
+	}
+	&.btn-warning {
+		background-color: $warning-color;
+		border-color: $warning-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $warning-color-hover;
+			border-color: $warning-color-hover;
+		}
+	}
+	&.btn-danger {
+		background-color: $danger-color;
+		border-color: $danger-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $danger-color-hover;
+			border-color: $danger-color-hover;
+		}
+	}
+	&.btn-info {
+		background-color: $info-color;
+		border-color: $info-color;
+		color: $white;
+		&:hover, &:focus, &:active, &.active {
+			background-color: $info-color-hover;
+			border-color: $info-color-hover;
+		}
+	}
+}
+
+.open .btn.dropdown-toggle {
+	background-color: #b0b5b9;
+	border-color: #b0b5b9;
+	color: $white;
+}

@@ -1,0 +1,63 @@
+/*
+ * Filename : input.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the input styles
+ */
+
+.form-control {
+	border: 1px solid #e2e2e4;
+	box-shadow: none;
+	color: $text-color;
+	&:focus {
+		border: 1px solid #00A8B3;
+		box-shadow: none;
+	}
+}
+.radio, .checkbox {
+	display: block;
+	min-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.has-error {
+	.form-control {
+		border-color: $danger-color;
+	}
+	label {
+		color: $danger-color;
+	}
+}
+.icheck {
+	.icheckbox, .iradio {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 18px;
+		height: 18px;
+		border: none;
+		background: url($images-path + "icheck.png") no-repeat;
+		background-position: 0px 0px;
+		vertical-align: middle;
+		&.checked {
+			background-position: -40px 0;
+		}
+	}
+	.iradio {
+		background-position: -100px 0;
+		&.checked {
+			background-position: -140px 0;
+		}
+	}
+	label {
+		font-weight: normal;
+		vertical-align: middle;
+		margin-bottom: 0px;
+		cursor: pointer;
+		span {
+			vertical-align: middle;
+			margin-left: 2px;
+		}
+	}
+}

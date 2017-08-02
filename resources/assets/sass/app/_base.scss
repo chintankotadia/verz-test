@@ -1,0 +1,51 @@
+/*
+ * Filename : base.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the bases styles
+ */
+ 
+html {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+body {
+	color: $text-color;
+	background: $background-color;
+	font-family: $body-font-family;
+	padding: 0px;
+	margin: 0px;
+	font-size: $body-font-size;
+	text-rendering:optimizeLegibility;
+}
+ul li {
+	list-style: none;
+}
+::selection {
+	background: #007ea8;
+	color: $white;
+}
+::-moz-selection {
+	background: #007EA8;
+	color: $white;
+}
+a {
+	color: #32323a;
+	text-decoration:none;
+	outline:none;
+	&:hover {
+		color: #222227;
+	}
+}
+ul {
+	padding-left: 0;
+}
+input, textarea, select, button {
+	outline: none;
+}
+.has-success .form-control:focus,
+.has-error .form-control:focus,
+.has-warning .form-control:focus {
+	box-shadow: none;
+}

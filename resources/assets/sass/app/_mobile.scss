@@ -1,0 +1,40 @@
+/*
+ * Filename : mobile.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the styles of mobile layout
+ */
+
+@media (max-width: 480px) {
+	.btn {
+		width: 100%;
+	}
+	.select2-container {
+		width: 100% !important;
+	}
+	table {
+		.btn {
+			width: auto;
+			margin-bottom: 0px !important;
+		}
+	}
+	.dragger-box .btn {
+		width: auto;
+	}
+	form {
+		.btn {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.advance-table .bottom .col-xs-6 {
+		float: none;
+		width: 100%;
+		.dataTables_paginate {
+			float: none;
+		}
+	}
+}

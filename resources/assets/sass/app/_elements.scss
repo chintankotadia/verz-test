@@ -1,0 +1,116 @@
+/*
+ * Filename : elements.scss
+ *
+ * @author Chintan Kotadia <kotadiachintan@gmail.com>
+ *
+ * Contains all the elements styles (Dropdown, progress bar,
+ * breadcrumbs, labels, navtabs, modals)
+ */
+
+.breadcrumb {
+	background-color: $white;
+}
+
+.text-danger, .error {
+	color: $danger-color;
+}
+.text-primary {
+	color: $primary-color;
+}
+.text-warning, .warning {
+	color: $warning-color;
+}
+.text-success, .success {
+	color: $success-color;
+}
+.text-info, .info {
+	color: $info-color;
+}
+.modal-content {
+	box-shadow: none;
+	border: none;
+	.modal-header {
+		background: #fafafa;
+		color: #333;
+		border-radius: 5px 5px 0 0;
+		-webkit-border-radius: 5px 5px 0 0;
+		.close {
+			margin-top: 0;
+		}
+	}
+}
+.progress, .progress-bar {
+	box-shadow: none;
+}
+.panel {
+	border: none;
+	box-shadow: none;
+	.panel-heading {
+	border-color: #eff2f7;
+	font-size: 13px;
+	font-weight: 400;
+	background: #fafafa;
+	text-transform: uppercase;
+	padding: 15px;  
+	}
+	.panel-title {
+		color: #32323A;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.panel-primary {
+		.tools a {
+			color: $white;
+		}
+	}
+}
+.pagination > li {
+	> a, > span {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		float: left;
+		line-height: 1.42857;
+		margin-left: 1px;
+		padding: 6px 12px;
+		position: relative;
+		text-decoration: none;
+		color: $text-color;
+		&:hover, &:focus {
+			background-color: $primary-color;
+			color: $white;
+		}
+	}
+	&.active > a {
+		background-color: $primary-color;
+		color: $white;
+	}
+}
+.drop-zone {
+	background-color: $white;
+	padding: 100px 50px 110px;
+	margin-bottom: 30px;
+	border: 5px dashed #F1F2F7;
+	border-radius: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #7f858a;
+	h4 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.or {
+		padding-bottom: 10px;
+		font-size: 16px;
+	}
+	input[type="file"] {
+		display: none;
+	}
+}
+.alert-error {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: $danger-color;
+}
