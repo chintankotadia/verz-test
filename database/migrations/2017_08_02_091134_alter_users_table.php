@@ -14,7 +14,7 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function($table) {
-            $table->string('mobile');
+            $table->string('mobile')->nullable();
             $table->string('photo')->nullable();
         });
     }
